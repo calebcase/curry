@@ -15,7 +15,10 @@ func render(w io.Writer) error {
 	file.HeaderComment("This file is generated - do not edit.")
 	file.Line()
 
-	for rets := 1; rets <= 2; rets++ {
+	// These are somewhat arbitrary, but I haven't seen too many functions
+	// in the wild that have more than 5 return parameters or more than 10
+	// arguments.
+	for rets := 1; rets <= 5; rets++ {
 		for args := 2; args <= 10; args++ {
 			fchain := func(i int) func(g *jen.Group) {
 				return func(g *jen.Group) {

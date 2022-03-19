@@ -36,10 +36,20 @@ func main() {
 
 For more examples and usage see the [go docs][pkg.go.dev].
 
+## Build
+
+The library is entirely generated with [jennifer][jennifer]:
+
+```
+go generate
+go test -v
+```
+
 ---
 
 [currying]: https://en.wikipedia.org/wiki/Currying
+[goreportcard badge]: https://goreportcard.com/badge/github.com/calebcase/curry
+[goreportcard]: https://goreportcard.com/report/github.com/calebcase/curry
+[jennifer]: https://github.com/dave/jennifer
 [pkg.go.dev badge]: https://pkg.go.dev/badge/github.com/calebcase/curry.svg
 [pkg.go.dev]: https://pkg.go.dev/github.com/calebcase/curry
-[goreportcard]: https://goreportcard.com/report/github.com/calebcase/curry
-[goreportcard badge]: https://goreportcard.com/badge/github.com/calebcase/curry
